@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = class Game {
+class Game {
     constructor() {
         // TODO
     }
@@ -38,3 +38,5 @@ module.exports = class Game {
         // TODO
     }
 };
+
+export {Game};

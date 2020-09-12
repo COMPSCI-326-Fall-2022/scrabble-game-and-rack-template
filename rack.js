@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = class Rack {
+class Rack {
     constructor() {
         // TODO
     }
@@ -23,3 +23,5 @@ module.exports = class Rack {
         // TODO
     }
 };
+
+export {Rack};
