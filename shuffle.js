@@ -1,24 +1,22 @@
 'use strict';
 
 function shuffle(array) {
-	// Fisher-Yates shuffle, used for random decoder cipher below    
-        let m = array.length;
-        let t;
-        let i;
+    // Fisher-Yates shuffle, used for random decoder cipher below    
+    let m = array.length;
+    
+    // While there remain elements to shuffle…                                                                                
+    while (m) {
 	
-        // While there remain elements to shuffle…                                                                                
-        while (m) {
-	    
-            // Pick a remaining element…                                                                                          
-            i = Math.floor(Math.random() * m--);
-	    
-            // And swap it with the current element.                                                                              
-            t = array[m];
-            array[m] = array[i];
-            array[i] = t;
-        }
+        // Pick a remaining element…                                                                                          
+        let i = Math.floor(Math.random() * m--);
 	
-        return array;
-    };
+        // And swap it with the current element.                                                                              
+        let t = array[m];
+        array[m] = array[i];
+        array[i] = t;
+    }
+    
+    return array;
+};
 
 export {shuffle};
